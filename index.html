@@ -15,7 +15,14 @@
 
 <title>WeCreate Enterprises</title>
 <link rel="icon" type="image/png" href="/favicon.png">
-
+<script> document.title = "WeCreate Enterprises"; </script>
+<script>
+    const faviconLink = document.querySelector("link[rel='icon']") || document.createElement('link');
+    faviconLink.rel = 'icon';
+    faviconLink.type = 'image/png';
+    faviconLink.href = '/favicon.png'; // Set your favicon path here
+    document.head.appendChild(faviconLink);
+</script>
 </head>
 <body>
 <!--     <script async src="https://events.framer.com/script?v=1" data-fid="7dfc641c74c3320aa49ca66a128c6f573777daf0677fcc0248de483076be3e00" data-no-nt></script>
